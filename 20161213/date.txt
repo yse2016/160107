@@ -1,0 +1,5 @@
+asuha,chiba,15
+
+maihime,kanagawa,16
+
+kanaria,Tokyo,17
