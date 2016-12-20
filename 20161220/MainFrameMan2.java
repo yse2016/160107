@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class MainFrameMan {
+public class MainFrameMan2 {
 	public static void main (String[] args ) {
 		FrameMan fm = new FrameMan();
 	}
@@ -12,8 +12,11 @@ public class MainFrameMan {
 	class FrameMan implements ActionListener {
 		// field
 		JFrame frame;
+		JPanel panel1;
+		JPanel panel2;
 		JLabel label;
 		JButton button;
+		JTextField  textfield;
 
 		// method
 		public FrameMan() {
@@ -21,19 +24,24 @@ public class MainFrameMan {
 
 			// パーツを作る
 			frame = new JFrame( "FrameMan!" );
+			panel1 = new JPanel();
+			panel2 = new JPanel();
 			label = new JLabel( "ALOHA" );
 			button = new JButton( "ClickMe" );
+			textfield = new JTextField( 15 );
 
 			button.addActionListener( this );
 
-			frame.setSize( 500, 500 );
+			frame.setSize( 500, 400 );
 			frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
-			frame.setLayout( new FlowLayout() );
+			frame.setLayout( new BorderLayout() );
 
 			// ラベルとボタンをはりつける
-			Container ctnr = frame.getContentPane();
-			ctnr.add( label );
-			ctnr.add( button );		
+			panel1.add( textfield );
+			panel1.add( button );
+			panel2.add( label );
+			frame.add( panel1, BorderLayout.NORTH );
+			frame.add( panel2, BorderLayout.CENTER );
 
 			// windowを表示する
 			frame.setVisible( true );
@@ -44,6 +52,7 @@ public class MainFrameMan {
 		}
 
 		public void actionPerformed( ActionEvent e ) {
-			label.setText("HELLO");
+			String data = textfield.getText();
+			label.setText( data );
 		}
 	}
