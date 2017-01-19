@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HelloCanvas</title>
+</head>
+<body>
+	<h1>Canvas</h1>
+	<hr>
+
+	<canvas id="canvas" width="3000" height="3000"></canvas>
+	<script>
+	    var canvas = document.getElementById('canvas');
+	    var ctx = canvas.getContext('2d');
+
+	    	ctx.fillStyle = "rgba( 0, 200, 200, 0.75 )";
+	    	//for( int i = 0; i < 5; i++ ) {
+	    		ctx.fillRect( 100, 100, 300, 300 );
+	    	//}	  
+	    	// ctx.fillStyle = "rgb( 250, 0, 0)";
+	    	ctx.strokeRect( 100,100,300,300);
+
+	    	ctx.clearRect( 220,220,50,50);
+	    	//ctx.clearRect( 150,150,100,100);
+
+	    	ctx.beginPath();
+	    	ctx.moveTo( 200, 600 );
+	    	ctx.lineTo( 250, 750 );
+	    	ctx.lineTo( 300, 600 );
+	    	ctx.fill();
+
+	    	ctx.moveTo(125,650);
+			ctx.lineTo(100,500);
+			ctx.lineTo(75,650);
+			ctx.fill();
+
+			ctx.moveTo(425,650);
+			ctx.lineTo(400,500);
+			ctx.lineTo(375,650);
+			ctx.closePath();
+			
+			ctx.fillStyle = "rgb( 0, 0, 200)";
+			ctx.moveTo(200,550);
+			ctx.lineTo(175,450);
+			ctx.lineTo(150,550);
+			ctx.fill(); 
+			ctx.closePath(); 
+
+			ctx.moveTo(350,550);
+			ctx.lineTo(325,450);
+			ctx.lineTo(300,550);
+			ctx.fill();
+
+			ctx.fillStyle = "rgba(0, 230, 50, 0.9 )";
+			ctx.beginPath();
+			ctx.moveTo( 600, 375);
+			ctx.arc(600, 300, 100, 0, Math.PI , false);
+			ctx.fill();	
+			ctx.closePath();
+
+	    	ctx.fillRect( 595, 200, 10, 200 );		
+	    	ctx.closePath();
+
+	    	ctx.beginPath();
+	    	ctx.moveTo( );
+			ctx.arc( 600, 50, 100, 0, Math.PI, false);		
+	    	ctx.fill();
+	    	ctx.closePath();
+
+	</script>
+</body>
+</html>
