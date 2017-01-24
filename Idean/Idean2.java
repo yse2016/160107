@@ -3,7 +3,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.io.*;
 
-public class Idean {
+public class Idean2 {
 	public static void main( String[] main ) {
 		IdeaMan idea = new IdeaMan();
 	}
@@ -22,8 +22,11 @@ class IdeaMan implements ActionListener {
 	String textdata;
 	JLabel label;
 	JLabel label2;
-	String[] data = new String[ 5 ];
-	// String data[] = { a, b, c, d, e };
+	String[] da = new String[ 10 ];
+	//String da[] = { "表示", "保存" };
+	int co = 0;
+
+	int num = (int)( Math.random()*10 );
 
 	public IdeaMan() {
 		frame = new JFrame( "Idean" );
@@ -47,16 +50,16 @@ class IdeaMan implements ActionListener {
 		area1 = new JTextArea( 10, 12 );
 		scrollPane = new JScrollPane( area1 );
 
-		con.add( scrollPane );
-
 		label = new JLabel();
-		label.setText( "LBL" );
+		label.setText( "" );
 
 		label2 = new JLabel();
-		label2.setText( "OK" );
+		label2.setText( "" );
 
 		panel.add( label );
-		panel.add( label2 );
+		panel.add( label2 );	
+
+		con.add( scrollPane );
 
 		frame.setVisible( true );
 
@@ -66,45 +69,41 @@ class IdeaMan implements ActionListener {
 		btn1.setActionCommand( "表示" );
 		btn2.setActionCommand( "保存" );
 
+		try {
+			File f = new File( "idea.txt" );
+			FileReader fr = new FileReader( f );
+			BufferedReader br = new BufferedReader( fr );
+
+			String line;
+			while( ( line = br.readLine() ) !=null ) {
+				da[ co ] = line;
+				co++;
+			}
+			br.close();
+		} catch( IOException e ) {
+			System.out.println( "error" );
+		}
+
 	}
 
 	public void actionPerformed( ActionEvent ae ) { 
 		String cmd = ae.getActionCommand();
 
 		if( cmd.equals( "表示" ) ) {
-			JFileChooser fc = new JFileChooser();
-			fc.setCurrentDirectory( new File( "." ) );
-			int ret = fc.showOpenDialog( frame );
-			if( ret == JFileChooser.APPROVE_OPTION ) {
-				File file = fc.getSelectedFile();
-				fielddata = file.getAbsolutePath();
-				field.setText( fielddata );
-			}
-
-			try {
-				File f = new File( fielddata );
-				FileReader fr = new FileReader( f );
-				BufferedReader br = new BufferedReader( fr );
-
-				String line;
-				while( ( line = br.readLine() ) !=null ) {
-					area1.append( line );
-					area1.append( "\n" );
-				}
-				br.close();
-			} catch( IOException e ) {
-				System.out.println( "Error" );
-			}
-		} else if( cmd.equals( "保存" ) ) {
-			fielddata = field.getText();
+			num = (int)( Math.random()*10 );
+			area1.setText( da[ num ] );
+			area1.append( "\n" );
+			num = (int)( Math.random()*10 );
+			area1.append( da[ num ] );	
+		}  else if( cmd.equals( "保存" ) ) {
 			textdata = area1.getText();
 			try {
-				File f2 = new File( fielddata );
-				FileWriter fw = new FileWriter( f2 , true );
+				File f2 = new File( "result.txt" );
+				FileWriter fw = new FileWriter( f2, true );
 				BufferedWriter bw = new BufferedWriter( fw );
 				PrintWriter pw = new PrintWriter( bw );
 
-				pw.println( textdata );
+				pw.println( textdata + "\n" );
 				pw.close();
 
 			} catch( IOException e ) {
