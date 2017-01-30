@@ -22,7 +22,7 @@ class IdeaMan implements ActionListener {
 	String textdata;
 	JLabel label;
 	JLabel label2;
-	String[] da = new String[ 10 ];
+	String[] da = new String[ 20 ];
 	//String da[] = { "表示", "保存" };
 	int co = 0;
 
@@ -70,9 +70,10 @@ class IdeaMan implements ActionListener {
 		btn2.setActionCommand( "保存" );
 
 		try {
-			File f = new File( "idea.txt" );
-			FileReader fr = new FileReader( f );
-			BufferedReader br = new BufferedReader( fr );
+			File f = new File( "words.txt" );
+			FileInputStream fis = new FileInputStream( f );
+			InputStreamReader isr = new InputStreamReader( fis, "UTF-8" ); 
+			BufferedReader br = new BufferedReader( isr );
 
 			String line;
 			while( ( line = br.readLine() ) !=null ) {
@@ -90,10 +91,10 @@ class IdeaMan implements ActionListener {
 		String cmd = ae.getActionCommand();
 
 		if( cmd.equals( "表示" ) ) {
-			num = (int)( Math.random()*10 );
+			num = (int)( Math.random()*co );
 			area1.setText( da[ num ] );
 			area1.append( "\n" );
-			num = (int)( Math.random()*10 );
+			num = (int)( Math.random()*co );
 			area1.append( da[ num ] );	
 		}  else if( cmd.equals( "保存" ) ) {
 			textdata = area1.getText();
