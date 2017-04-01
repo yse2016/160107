@@ -2,15 +2,16 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>createJS</title>
+	<title>CreateJS</title>
 </head>
 <body>
-	<h1>createJS : ALOHA</h1>
+	<h1>CreateJS : ALOHA</h1>
 	<hr>
 
 	<canvas id = "myCanvas" width="1000" height="550" ></canvas>
 	<script src="https://code.createjs.com/createjs-2015.11.26.min.js">
 	</script>
+
 	<script>
 		window.addEventListener( 'load', init );
 		function init(){
@@ -245,7 +246,6 @@
 			var O19 = new createjs.Shape();
 			O19.graphics.beginFill( "#00FF00" );
 			O19.graphics.drawRect( 190 + i, 190, 10, 10)
-
 
 	
 			var O20 = new createjs.Shape();
@@ -512,257 +512,133 @@
 			AA22.graphics.drawRect( 350, 160, 10,10);
 
 
-			//A1.x = stage.canvas.width * Math.random();
- 			//A1.y = stage.canvas.height * Math.random();
+ 			A1.vx = 0;	A1.vy = 0;
+ 			A2.vx = 0; 	A2.vy = 0;
+ 			A3.vx = 0; 	A3.vy = 0;
+ 			A4.vx = 0;	A4.vy = 0;
+ 			A5.vx = 0; 	A5.vy = 0;
+ 			A6.vx = 0; 	A6.vy = 0;
+ 			A7.vx = 0; 	A7.vy = 0;
+ 			A8.vx = 0; 	A8.vy = 0;
+ 			A9.vx = 0;	A9.vy = 0;
+ 			A10.vx = 0;	 A10.vy = 0;
+ 			A11.vx = 0;	 A11.vy = 0;
+ 			A12.vx = 0;	 A12.vy = 0;
+ 			A13.vx = 0;	 A13.vy = 0;
+ 			A14.vx = 0;	 A14.vy = 0;
+ 			A15.vx = 0;	 A15.vy = 0;
+ 			A16.vx = 0;  A16.vy = 0;
+ 			A17.vx = 0;	 A17.vy = 0;
+ 			A18.vx = 0;  A18.vy = 0;
+ 			A19.vx = 0;	 A19.vy = 0;
+ 			A20.vx = 0;  A20.vy = 0;
+ 			A21.vx = 0;  A21.vy = 0;
+ 			A22.vx = 0;  A22.vy = 0;
 
- 			A1.vx = 0;
- 			A1.vy = 0;
- 			A2.vx = 0;
- 			A2.vy = 0;
- 			A3.vx = 0;
- 			A3.vy = 0;
- 			A4.vx = 0;
- 			A4.vy = 0;
- 			A5.vx = 0;
- 			A5.vy = 0;
- 			A6.vx = 0;
- 			A6.vy = 0;
- 			A7.vx = 0;
- 			A7.vy = 0;
- 			A8.vx = 0;
- 			A8.vy = 0;
- 			A9.vx = 0;
- 			A9.vy = 0;
- 			A10.vx = 0;
- 			A10.vy = 0;
- 			A11.vx = 0;
- 			A11.vy = 0;
- 			A12.vx = 0;
- 			A12.vy = 0;
- 			A13.vx = 0;
- 			A13.vy = 0;
- 			A14.vx = 0;
- 			A14.vy = 0;
- 			A15.vx = 0;
- 			A15.vy = 0;
- 			A16.vx = 0;
- 			A16.vy = 0;
- 			A17.vx = 0;
- 			A17.vy = 0;
- 			A18.vx = 0;
- 			A18.vy = 0;
- 			A19.vx = 0;
- 			A19.vy = 0;
- 			A20.vx = 0;
- 			A20.vy = 0;
- 			A21.vx = 0;
- 			A21.vy = 0;
- 			A22.vx = 0;
- 			A22.vy = 0;
+ 			L1.vx = 0;  L1.vy = 0;
+ 			L2.vx = 0;  L2.vy = 0;
+ 			L3.vx = 0; 	L3.vy = 0;
+ 			L4.vx = 0; 	L4.vy = 0;
+ 			L5.vx = 0;  L5.vy = 0;
+ 			L6.vx = 0; 	L6.vy = 0;
+ 			L7.vx = 0; 	L7.vy = 0;
+ 			L8.vx = 0;  L8.vy = 0;
+ 			L9.vx = 0; 	L9.vy = 0;
+ 			L10.vx = 0;  L10.vy = 0;
+ 			L11.vx = 0;  L11.vy = 0;
+ 			L12.vx = 0;  L12.vy = 0;
+ 			L13.vx = 0;  L13.vy = 0;
+ 			L14.vx = 0;  L14.vy = 0;
+ 			L15.vx = 0;  L15.vy = 0;
 
- 			L1.vx = 0;
- 			L1.vy = 0;
- 			L2.vx = 0;
- 			L2.vy = 0;
- 			L3.vx = 0;
- 			L3.vy = 0;
- 			L4.vx = 0;
- 			L4.vy = 0;
- 			L5.vx = 0;
- 			L5.vy = 0;
- 			L6.vx = 0;
- 			L6.vy = 0;
- 			L7.vx = 0;
- 			L7.vy = 0;
- 			L8.vx = 0;
- 			L8.vy = 0;
- 			L9.vx = 0;
- 			L9.vy = 0;
- 			L10.vx = 0;
- 			L10.vy = 0;
- 			L11.vx = 0;
- 			L11.vy = 0;
- 			L12.vx = 0;
- 			L12.vy = 0;
- 			L13.vx = 0;
- 			L13.vy = 0;
- 			L14.vx = 0;
- 			L14.vy = 0;
- 			L15.vx = 0;
- 			L15.vy = 0;
+ 			O1.vx = 0;  O1.vy = 0;
+ 			O2.vx = 0; 	O2.vy = 0;
+ 			O3.vx = 0; 	O3.vy = 0;
+ 			O4.vx = 0;  O4.vy = 0;
+ 			O5.vx = 0;  O5.vy = 0;
+ 			O6.vx = 0;  O6.vy = 0;
+ 			O7.vx = 0;  O7.vy = 0;
+ 			O8.vx = 0;  O8.vy = 0;
+ 			O9.vx = 0; 	O9.vy = 0;
+ 			O10.vx = 0;  O10.vy = 0;
+ 			O11.vx = 0;  O11.vy = 0;
+ 			O12.vx = 0;  O12.vy = 0;
+ 			O13.vx = 0;  O13.vy = 0;
+ 			O14.vx = 0;  O14.vy = 0;
+ 			O15.vx = 0;  O15.vy = 0;
+ 			O16.vx = 0;  O16.vy = 0;
+ 			O17.vx = 0;  O17.vy = 0;
+ 			O18.vx = 0;  O18.vy = 0;
+ 			O19.vx = 0;  O19.vy = 0;
+ 			O20.vx = 0;  O20.vy = 0;
+ 			O21.vx = 0;  O21.vy = 0;
+ 			O22.vx = 0;  O22.vy = 0;
+ 			O23.vx = 0;  O23.vy = 0;
+ 			O24.vx = 0;  O24.vy = 0;
+ 			O25.vx = 0;  O25.vy = 0;
+ 			O26.vx = 0;  O26.vy = 0;
+ 			O27.vx = 0;  O27.vy = 0;
+ 			O28.vx = 0;  O28.vy = 0;
+ 			O29.vx = 0;  O29.vy = 0;
+ 			O30.vx = 0;  O30.vy = 0;
+ 			O31.vx = 0;  O31.vy = 0;
+ 			O32.vx = 0;  O32.vy = 0;
+ 			O33.vx = 0;  O33.vy = 0;
+ 			O34.vx = 0;  O34.vy = 0;
+ 			O35.vx = 0;  O35.vy = 0;
+ 			O36.vx = 0;  O36.vy = 0;
+ 			O37.vx = 0;  O37.vy = 0;
 
- 			O1.vx = 0;
- 			O1.vy = 0;
- 			O2.vx = 0;
- 			O2.vy = 0;
- 			O3.vx = 0;
- 			O3.vy = 0;
- 			O4.vx = 0;
- 			O4.vy = 0;
- 			O5.vx = 0;
- 			O5.vy = 0;
- 			O6.vx = 0;
- 			O6.vy = 0;
- 			O7.vx = 0;
- 			O7.vy = 0;
- 			O8.vx = 0;
- 			O8.vy = 0;
- 			O9.vx = 0;
- 			O9.vy = 0;
- 			O10.vx = 0;
- 			O10.vy = 0;
- 			O11.vx = 0;
- 			O11.vy = 0;
- 			O12.vx = 0;
- 			O12.vy = 0;
- 			O13.vx = 0;
- 			O13.vy = 0;
- 			O14.vx = 0;
- 			O14.vy = 0;
- 			O15.vx = 0;
- 			O15.vy = 0;
- 			O16.vx = 0;
- 			O16.vy = 0;
- 			O17.vx = 0;
- 			O17.vy = 0;
- 			O18.vx = 0;
- 			O18.vy = 0;
- 			O19.vx = 0;
- 			O19.vy = 0;
- 			O20.vx = 0;
- 			O20.vy = 0;
- 			O21.vx = 0;
- 			O21.vy = 0;
- 			O22.vx = 0;
- 			O22.vy = 0;
- 			O23.vx = 0;
- 			O23.vy = 0;
- 			O24.vx = 0;
- 			O24.vy = 0;
- 			O25.vx = 0;
- 			O25.vy = 0;
- 			O26.vx = 0;
- 			O26.vy = 0;
- 			O27.vx = 0;
- 			O27.vy = 0;
- 			O28.vx = 0;
- 			O28.vy = 0;
- 			O29.vx = 0;
- 			O29.vy = 0;
- 			O30.vx = 0;
- 			O30.vy = 0;
- 			O31.vx = 0;
- 			O31.vy = 0;
- 			O32.vx = 0;
- 			O32.vy = 0;
- 			O33.vx = 0;
- 			O33.vy = 0;
- 			O34.vx = 0;
- 			O34.vy = 0;
- 			O35.vx = 0;
- 			O35.vy = 0;
- 			O36.vx = 0;
- 			O36.vy = 0;
- 			O37.vx = 0;
- 			O37.vy = 0;
+ 			H1.vx = 0; 	H1.vy = 0;
+ 			H2.vx = 0; 	H2.vy = 0;
+ 			H3.vx = 0; 	H3.vy = 0;
+ 			H4.vx = 0; 	H4.vy = 0;
+ 			H5.vx = 0; 	H5.vy = 0;
+ 			H6.vx = 0; 	H6.vy = 0;
+ 			H7.vx = 0; 	H7.vy = 0;
+ 			H8.vx = 0; 	H8.vy = 0;
+ 			H9.vx = 0; 	H9.vy = 0;
+ 			H10.vx = 0;  H10.vy = 0;
+ 			H11.vx = 0;  H11.vy = 0;
+ 			H12.vx = 0;  H12.vy = 0;
+ 			H13.vx = 0;  H13.vy = 0; 			
+ 			H14.vx = 0;  H14.vy = 0; 			
+ 			H15.vx = 0;  H15.vy = 0; 			
+ 			H16.vx = 0;  H16.vy = 0;
+ 			H17.vx = 0;  H17.vy = 0;
+ 			H18.vx = 0;  H18.vy = 0;
+ 			H20.vx = 0;  H20.vy = 0;
+ 			H21.vx = 0;  H21.vy = 0;
+ 			H22.vx = 0;  H22.vy = 0;
+ 			H23.vx = 0;  H23.vy = 0;
+ 			H24.vx = 0;  H24.vy = 0;
+ 			H25.vx = 0;  H25.vy = 0;
+ 			H26.vx = 0;  H26.vy = 0;
 
- 			H1.vx = 0;
- 			H1.vy = 0;
- 			H2.vx = 0;
- 			H2.vy = 0;
- 			H3.vx = 0;
- 			H3.vy = 0;
- 			H4.vx = 0;
- 			H4.vy = 0;
- 			H5.vx = 0;
- 			H5.vy = 0;
- 			H6.vx = 0;
- 			H6.vy = 0;
- 			H7.vx = 0;
- 			H7.vy = 0;
- 			H8.vx = 0;
- 			H8.vy = 0;
- 			H9.vx = 0;
- 			H9.vy = 0;
- 			H10.vx = 0;
- 			H10.vy = 0;
- 			H11.vx = 0;
- 			H11.vy = 0;
- 			H12.vx = 0;
- 			H12.vy = 0;
- 			H13.vx = 0;
- 			H13.vy = 0;
- 			H14.vx = 0;
- 			H14.vy = 0;
- 			H15.vx = 0;
- 			H15.vy = 0;
- 			H16.vx = 0;
- 			H16.vy = 0;
- 			H17.vx = 0;
- 			H17.vy = 0;
- 			H18.vx = 0;
- 			H18.vy = 0;
- 			H20.vx = 0;
- 			H20.vy = 0;
- 			H21.vx = 0;
- 			H21.vy = 0;
- 			H22.vx = 0;
- 			H22.vy = 0;
- 			H23.vx = 0;
- 			H23.vy = 0;
- 			H24.vx = 0;
- 			H24.vy = 0;
- 			H25.vx = 0;
- 			H25.vy = 0;
- 			H26.vx = 0;
- 			H26.vy = 0;
+ 			AA1.vx = 0;  AA1.vy = 0;
+ 			AA2.vx = 0;  AA2.vy = 0;
+ 			AA3.vx = 0;	 AA3.vy = 0;
+ 			AA4.vx = 0;  AA4.vy = 0;
+ 			AA5.vx = 0;  AA5.vy = 0;
+ 			AA6.vx = 0;  AA6.vy = 0;
+ 			AA7.vx = 0;  AA7.vy = 0;
+ 			AA8.vx = 0;  AA8.vy = 0;
+ 			AA9.vx = 0;  AA9.vy = 0;
+ 			AA10.vx = 0;  AA10.vy = 0;
+ 			AA11.vx = 0;  AA11.vy = 0;
+ 			AA12.vx = 0;  AA12.vy = 0;
+ 			AA13.vx = 0;  AA13.vy = 0;
+ 			AA14.vx = 0;  AA14.vy = 0;
+ 			AA15.vx = 0;  AA15.vy = 0;
+ 			AA16.vx = 0;  AA16.vy = 0;
+ 			AA17.vx = 0;  AA17.vy = 0;
+ 			AA18.vx = 0;  AA18.vy = 0;
+ 			AA19.vx = 0;  AA19.vy = 0;
+ 			AA20.vx = 0;  AA20.vy = 0;
+ 			AA21.vx = 0;  AA21.vy = 0;
+ 			AA22.vx = 0;  AA22.vy = 0;			
 
- 			AA1.vx = 0;
- 			AA1.vy = 0;
- 			AA2.vx = 0;
- 			AA2.vy = 0;
- 			AA3.vx = 0;
- 			AA3.vy = 0;
- 			AA4.vx = 0;
- 			AA4.vy = 0;
- 			AA5.vx = 0;
- 			AA5.vy = 0;
- 			AA6.vx = 0;
- 			AA6.vy = 0;
- 			AA7.vx = 0;
- 			AA7.vy = 0;
- 			AA8.vx = 0;
- 			AA8.vy = 0;
- 			AA9.vx = 0;
- 			AA9.vy = 0;
- 			AA10.vx = 0;
- 			AA10.vy = 0;
- 			AA11.vx = 0;
- 			AA11.vy = 0;
- 			AA12.vx = 0;
- 			AA12.vy = 0;
- 			AA13.vx = 0;
- 			AA13.vy = 0;
- 			AA14.vx = 0;
- 			AA14.vy = 0;
- 			AA15.vx = 0;
- 			AA15.vy = 0;
- 			AA16.vx = 0;
- 			AA16.vy = 0;
- 			AA17.vx = 0;
- 			AA17.vy = 0;
- 			AA18.vx = 0;
- 			AA18.vy = 0;
- 			AA19.vx = 0;
- 			AA19.vy = 0;
- 			AA20.vx = 0;
- 			AA20.vy = 0;
- 			AA21.vx = 0;
- 			AA21.vy = 0;
- 			AA22.vx = 0;
- 			AA22.vy = 0;			
-
-			stage.addChild( A1, A2, A3, A4, A5, A6, A7, A8,A9,A10,A11,A12,A13,A14,A15,A16,A17,A18,A19,A20,A21,A22,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11,L12,L13,L14,L15,O1 ,O2,O3,O4,O5,O6,O7,O8,O9,O10,O11,O12,O13,O14,O15,O16,O17,O18,O19,O20,O21,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32,O33,O34,O35,O36,O37,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H20,H21,H22,H23,H24,H25,H26,AA1,AA2,AA3,AA4,AA5,AA6,AA7,AA8,AA9,AA10,AA11,AA12,AA13,AA14,AA15,AA16,AA17,AA18,AA19,AA20,AA21,AA22);
+			stage.addChild( A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20, A21, A22, L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L15, O1, O2, O3, O4, O5, O6, O7, O8, O9, O10, O11, O12, O13, O14, O15, O16, O17, O18, O19, O20, O21, O22, O23, O24, O25, O26, O27, O28, O29, O30, O31, O32, O33, O34, O35, O36, O37, H1, H2, H3, H4, H5, H6, H7, H8, H9, H10, H11, H12, H13, H14, H15, H16, H17, H18, H20, H21, H22, H23, H24, H25, H26, AA1, AA2, AA3, AA4, AA5, AA6, AA7, AA8, AA9, AA10, AA11, AA12, AA13, AA14, AA15, AA16, AA17, AA18, AA19, AA20, AA21, AA22 );
 
 
 			var m = 0;
@@ -896,6 +772,7 @@
 			AA21.addEventListener( "click", handleRectClick );
 			AA22.addEventListener( "click", handleRectClick );
 
+
 			if ( m%2 == 1 ) {
 				A1.vy += 1;
 		        A1.vx *= 0.95;
@@ -906,6 +783,7 @@
 		            A1.y = stage.canvas.height - 150;
 		            A1.vy *= -1;
 		        }
+
 		        A2.vy += 1;
 		        A2.vx *= 0.95;
 		        A2.vy *= 0.95;
@@ -915,6 +793,7 @@
 		            A2.y = stage.canvas.height - 160;
 		            A2.vy *= -1;
 		        }
+
 		        A3.vy += 1;
 		        A3.vx *= 0.95;
 		        A3.vy *= 0.95;
@@ -924,6 +803,7 @@
 		            A3.y = stage.canvas.height - 170;
 		            A3.vy *= -1;
 		        }
+
 		        A4.vy += 1;
 		        A4.vx *= 0.95;
 		        A4.vy *= 0.95;
@@ -933,6 +813,7 @@
 		            A4.y = stage.canvas.height - 180;
 		            A4.vy *= -1;
 		        }
+
 		        A5.vy += 1;
 		        A5.vx *= 0.95;
 		        A5.vy *= 0.95;
@@ -942,6 +823,7 @@
 		            A5.y = stage.canvas.height - 190;
 		            A5.vy *= -1;
 		        }
+
 		        A6.vy += 1;
 		        A6.vx *= 0.95;
 		        A6.vy *= 0.95;
@@ -951,6 +833,7 @@
 		            A6.y = stage.canvas.height - 200;
 		            A6.vy *= -1;
 		        }
+
 		        A7.vy += 1;
 		        A7.vx *= 0.95;
 		        A7.vy *= 0.95;
@@ -960,6 +843,7 @@
 		            A7.y = stage.canvas.height - 210;
 		            A7.vy *= -1;
 		        }
+
 		        A8.vy += 1;
 		        A8.vx *= 0.95;
 		        A8.vy *= 0.95;
@@ -969,6 +853,7 @@
 		            A8.y = stage.canvas.height - 220;
 		            A8.vy *= -1;
 		        }
+
 		        A9.vy += 1;
 		        A9.vx *= 0.95;
 		        A9.vy *= 0.95;
@@ -978,6 +863,7 @@
 		            A9.y = stage.canvas.height - 160;
 		            A9.vy *= -1;
 		        }
+
 		        A10.vy += 1;
 		        A10.vx *= 0.95;
 		        A10.vy *= 0.95;
@@ -987,6 +873,7 @@
 		            A10.y = stage.canvas.height - 170;
 		            A10.vy *= -1;
 		        }
+
 		        A11.vy += 1;
 		        A11.vx *= 0.95;
 		        A11.vy *= 0.95;
@@ -996,6 +883,7 @@
 		            A11.y = stage.canvas.height - 180;
 		            A11.vy *= -1;
 		        }
+
 		        A12.vy += 1;
 		        A12.vx *= 0.95;
 		        A12.vy *= 0.95;
@@ -1005,6 +893,7 @@
 		            A12.y = stage.canvas.height - 190;
 		            A12.vy *= -1;
 		        }
+
 		        A13.vy += 1;
 		        A13.vx *= 0.95;
 		        A13.vy *= 0.95;
@@ -1014,6 +903,7 @@
 		            A13.y = stage.canvas.height - 200;
 		            A13.vy *= -1;
 		        }
+
 		        A14.vy += 1;
 		        A14.vx *= 0.95;
 		        A14.vy *= 0.95;
@@ -1023,6 +913,7 @@
 		            A14.y = stage.canvas.height - 210;
 		            A14.vy *= -1;
 		        }
+
 		        A15.vy += 1;
 		        A15.vx *= 0.95;
 		        A15.vy *= 0.95;
@@ -1032,6 +923,7 @@
 		            A15.y = stage.canvas.height - 220;
 		            A15.vy *= -1;
 		        }
+
 		        A16.vy += 1;
 		        A16.vx *= 0.95;
 		        A16.vy *= 0.95;
@@ -1041,6 +933,7 @@
 		            A16.y = stage.canvas.height - 230;
 		            A16.vy *= -1;
 		        }
+
 		        A17.vy += 1;
 		        A17.vx *= 0.95;
 		        A17.vy *= 0.95;
@@ -1050,6 +943,7 @@
 		            A17.y = stage.canvas.height - 240;
 		            A17.vy *= -1;
 		        }
+
 		        A18.vy += 1;
 		        A18.vx *= 0.95;
 		        A18.vy *= 0.95;
@@ -1059,6 +953,7 @@
 		            A18.y = stage.canvas.height - 230;
 		            A18.vy *= -1;
 		        }
+
 		        A19.vy += 1;
 		        A19.vx *= 0.95;
 		        A19.vy *= 0.95;
@@ -1068,6 +963,7 @@
 		            A19.y = stage.canvas.height - 240;
 		            A19.vy *= -1;
 		        }
+
 		        A20.vy += 1.05;
 		        A20.vx *= 0.95;
 		        A20.vy *= 0.95;
@@ -1077,6 +973,7 @@
 		            A20.y = stage.canvas.height - 210;
 		            A20.vy *= -1;
 		        }
+
 		        A21.vy += 1.1;
 		        A21.vx *= 0.95;
 		        A21.vy *= 0.95;
@@ -1086,6 +983,7 @@
 		            A21.y = stage.canvas.height - 210;
 		            A21.vy *= -1;
 		        }
+
 		        A22.vy += 1.05;
 		        A22.vx *= 0.95;
 		        A22.vy *= 0.95;
@@ -1095,6 +993,8 @@
 		            A22.y = stage.canvas.height - 210;
 		            A22.vy *= -1;
 		        }
+
+
 		        L1.vy += 1;
 		        L1.vx *= 0.95;
 		        L1.vy *= 0.95;
@@ -1104,6 +1004,7 @@
 		            L1.y = stage.canvas.height - 150;
 		            L1.vy *= -1;
 		        }
+
 		        L2.vy += 1;
 		        L2.vx *= 0.95;
 		        L2.vy *= 0.95;
@@ -1113,6 +1014,7 @@
 		            L2.y = stage.canvas.height - 160;
 		            L2.vy *= -1;
 		        }
+
 		        L3.vy += 1;
 		        L3.vx *= 0.95;
 		        L3.vy *= 0.95;
@@ -1122,6 +1024,7 @@
 		            L3.y = stage.canvas.height - 170;
 		            L3.vy *= -1;
 		        }
+
 		        L4.vy += 1;
 		        L4.vx *= 0.95;
 		        L4.vy *= 0.95;
@@ -1131,6 +1034,7 @@
 		            L4.y = stage.canvas.height - 180;
 		            L4.vy *= -1;
 		        }
+
 		        L5.vy += 1;
 		        L5.vx *= 0.95;
 		        L5.vy *= 0.95;
@@ -1140,6 +1044,7 @@
 		            L5.y = stage.canvas.height - 190;
 		            L5.vy *= -1;
 		        }
+
 		        L6.vy += 1;
 		        L6.vx *= 0.95;
 		        L6.vy *= 0.95;
@@ -1149,6 +1054,7 @@
 		            L6.y = stage.canvas.height - 200;
 		            L6.vy *= -1;
 		        }
+
 		        L7.vy += 1;
 		        L7.vx *= 0.95;
 		        L7.vy *= 0.95;
@@ -1158,6 +1064,7 @@
 		            L7.y = stage.canvas.height - 210;
 		            L7.vy *= -1;
 		        }
+
 		        L8.vy += 1;
 		        L8.vx *= 0.95;
 		        L8.vy *= 0.95;
@@ -1167,6 +1074,7 @@
 		            L8.y = stage.canvas.height - 220;
 		            L8.vy *= -1;
 		        }
+
 		        L9.vy += 1;
 		        L9.vx *= 0.95;
 		        L9.vy *= 0.95;
@@ -1176,6 +1084,7 @@
 		            L9.y = stage.canvas.height - 230;
 		            L9.vy *= -1;
 		        }
+
 		        L10.vy += 1;
 		        L10.vx *= 0.95;
 		        L10.vy *= 0.95;
@@ -1185,6 +1094,7 @@
 		            L10.y = stage.canvas.height - 240;
 		            L10.vy *= -1;
 		        }
+
 		        L11.vy += 1.05;
 		        L11.vx *= 0.95;
 		        L11.vy *= 0.95;
@@ -1194,6 +1104,7 @@
 		            L11.y = stage.canvas.height - 240;
 		            L11.vy *= -1;
 		        }
+
 		        L12.vy += 1.1;
 		        L12.vx *= 0.95;
 		        L12.vy *= 0.95;
@@ -1203,6 +1114,7 @@
 		            L12.y = stage.canvas.height - 240;
 		            L12.vy *= -1;
 		        }
+
 		        L13.vy += 1.15;
 		        L13.vx *= 0.95;
 		        L13.vy *= 0.95;
@@ -1212,6 +1124,7 @@
 		            L13.y = stage.canvas.height - 240;
 		            L13.vy *= -1;
 		        }
+
 		        L14.vy += 1.1;
 		        L14.vx *= 0.95;
 		        L14.vy *= 0.95;
@@ -1221,6 +1134,7 @@
 		            L14.y = stage.canvas.height - 240;
 		            L14.vy *= -1;
 		        }
+
 		        L15.vy += 1.05;
 		        L15.vx *= 0.95;
 		        L15.vy *= 0.95;
@@ -1230,6 +1144,8 @@
 		            L15.y = stage.canvas.height - 240;
 		            L15.vy *= -1;
 		        }
+
+
 		        O1.vy += 1;
 		        O1.vx *= 0.95;
 		        O1.vy *= 0.95;
@@ -1239,6 +1155,7 @@
 		            O1.y = stage.canvas.height - 150;
 		            O1.vy *= -1;
 		        }
+
 		      	O2.vy += 1;
 		        O2.vx *= 0.95;
 		        O2.vy *= 0.95;
@@ -1248,6 +1165,7 @@
 		            O2.y = stage.canvas.height - 155;
 		            O2.vy *= -1;
 		        }
+
 		      	O3.vy += 1;
 		        O3.vx *= 0.95;
 		        O3.vy *= 0.95;
@@ -1257,6 +1175,7 @@
 		            O3.y = stage.canvas.height - 160;
 		            O3.vy *= -1;
 		        }
+
 		      	O4.vy += 1;
 		        O4.vx *= 0.95;
 		        O4.vy *= 0.95;
@@ -1266,6 +1185,7 @@
 		            O4.y = stage.canvas.height - 165;
 		            O4.vy *= -1;
 		        }
+
 		      	O5.vy += 1;
 		        O5.vx *= 0.95;
 		        O5.vy *= 0.95;
@@ -1275,6 +1195,7 @@
 		            O5.y = stage.canvas.height - 170;
 		            O5.vy *= -1;
 		        }
+
 		      	O6.vy += 1;
 		        O6.vx *= 0.95;
 		        O6.vy *= 0.95;
@@ -1284,6 +1205,7 @@
 		            O6.y = stage.canvas.height - 175;
 		            O6.vy *= -1;
 		        }
+
 		      	O7.vy += 1;
 		        O7.vx *= 0.95;
 		        O7.vy *= 0.95;
@@ -1293,6 +1215,7 @@
 		            O7.y = stage.canvas.height - 180;
 		            O7.vy *= -1;
 		        }
+
 		      	O8.vy += 1;
 		        O8.vx *= 0.95;
 		        O8.vy *= 0.95;
@@ -1302,6 +1225,7 @@
 		            O8.y = stage.canvas.height - 185;
 		            O8.vy *= -1;
 		        }
+
 		      	O9.vy += 1;
 		        O9.vx *= 0.95;
 		        O9.vy *= 0.95;
@@ -1311,6 +1235,7 @@
 		            O9.y = stage.canvas.height - 190;
 		            O9.vy *= -1;
 		        }
+
 		      	O10.vy += 1;
 		        O10.vx *= 0.95;
 		        O10.vy *= 0.95;
@@ -1320,6 +1245,7 @@
 		            O10.y = stage.canvas.height - 195;
 		            O10.vy *= -1;
 		        }
+
 		      	O11.vy += 1;
 		        O11.vx *= 0.95;
 		        O11.vy *= 0.95;
@@ -1329,6 +1255,7 @@
 		            O11.y = stage.canvas.height - 200;
 		            O11.vy *= -1;
 		        }
+
 		      	O12.vy += 1;
 		        O12.vx *= 0.95;
 		        O12.vy *= 0.95;
@@ -1338,6 +1265,7 @@
 		            O12.y = stage.canvas.height - 205;
 		            O12.vy *= -1;
 		        }
+
 		      	O13.vy += 1;
 		        O13.vx *= 0.95;
 		        O13.vy *= 0.95;
@@ -1347,6 +1275,7 @@
 		            O13.y = stage.canvas.height - 210;
 		            O13.vy *= -1;
 		        }
+
 		      	O14.vy += 1;
 		        O14.vx *= 0.95;
 		        O14.vy *= 0.95;
@@ -1356,6 +1285,7 @@
 		            O14.y = stage.canvas.height - 215;
 		            O14.vy *= -1;
 		        }
+
 		      	O15.vy += 1;
 		        O15.vx *= 0.95;
 		        O15.vy *= 0.95;
@@ -1365,6 +1295,7 @@
 		            O15.y = stage.canvas.height - 220;
 		            O15.vy *= -1;
 		        }
+
 		      	O16.vy += 1;
 		        O16.vx *= 0.95;
 		        O16.vy *= 0.95;
@@ -1374,6 +1305,7 @@
 		            O16.y = stage.canvas.height - 225;
 		            O16.vy *= -1;
 		        }
+
 		      	O17.vy += 1;
 		        O17.vx *= 0.95;
 		        O17.vy *= 0.95;
@@ -1383,6 +1315,7 @@
 		            O17.y = stage.canvas.height - 230;
 		            O17.vy *= -1;
 		        }
+
 		      	O18.vy += 1;
 		        O18.vx *= 0.95;
 		        O18.vy *= 0.95;
@@ -1392,6 +1325,7 @@
 		            O18.y = stage.canvas.height - 235;
 		            O18.vy *= -1;
 		        }
+
 		      	O19.vy += 1;
 		        O19.vx *= 0.95;
 		        O19.vy *= 0.95;
@@ -1401,6 +1335,7 @@
 		            O19.y = stage.canvas.height - 240;
 		            O19.vy *= -1;
 		        }
+
 		      	O20.vy += 1;
 		        O20.vx *= 0.95;
 		        O20.vy *= 0.95;
@@ -1410,6 +1345,7 @@
 		            O20.y = stage.canvas.height - 155;
 		            O20.vy *= -1;
 		        }
+
 		      	O21.vy += 1;
 		        O21.vx *= 0.95;
 		        O21.vy *= 0.95;
@@ -1419,6 +1355,7 @@
 		            O21.y = stage.canvas.height - 160;
 		            O21.vy *= -1;
 		        }
+
 		      	O22.vy += 1;
 		        O22.vx *= 0.95;
 		        O22.vy *= 0.95;
@@ -1428,6 +1365,7 @@
 		            O22.y = stage.canvas.height - 165;
 		            O22.vy *= -1;
 		        }
+
 		      	O23.vy += 1;
 		        O23.vx *= 0.95;
 		        O23.vy *= 0.95;
@@ -1437,6 +1375,7 @@
 		            O23.y = stage.canvas.height - 170;
 		            O23.vy *= -1;
 		        }
+
 		      	O24.vy += 1;
 		        O24.vx *= 0.95;
 		        O24.vy *= 0.95;
@@ -1446,6 +1385,7 @@
 		            O24.y = stage.canvas.height - 175;
 		            O24.vy *= -1;
 		        }
+
 		      	O25.vy += 1;
 		        O25.vx *= 0.95;
 		        O25.vy *= 0.95;
@@ -1455,6 +1395,7 @@
 		            O25.y = stage.canvas.height - 180;
 		            O25.vy *= -1;
 		        }
+
 		      	O26.vy += 1;
 		        O26.vx *= 0.95;
 		        O26.vy *= 0.95;
@@ -1464,6 +1405,7 @@
 		            O26.y = stage.canvas.height - 185;
 		            O26.vy *= -1;
 		        }
+
 		      	O27.vy += 1;
 		        O27.vx *= 0.95;
 		        O27.vy *= 0.95;
@@ -1473,6 +1415,7 @@
 		            O27.y = stage.canvas.height - 190;
 		            O27.vy *= -1;
 		        }
+
 		      	O28.vy += 1;
 		        O28.vx *= 0.95;
 		        O28.vy *= 0.95;
@@ -1482,6 +1425,7 @@
 		            O28.y = stage.canvas.height - 195;
 		            O28.vy *= -1;
 		        }
+
 		      	O29.vy += 1;
 		        O29.vx *= 0.95;
 		        O29.vy *= 0.95;
@@ -1491,6 +1435,7 @@
 		            O29.y = stage.canvas.height - 200;
 		            O29.vy *= -1;
 		        }
+
 		      	O30.vy += 1;
 		        O30.vx *= 0.95;
 		        O30.vy *= 0.95;
@@ -1500,6 +1445,7 @@
 		            O30.y = stage.canvas.height - 205;
 		            O30.vy *= -1;
 		        }
+
 		      	O31.vy += 1;
 		        O31.vx *= 0.95;
 		        O31.vy *= 0.95;
@@ -1509,6 +1455,7 @@
 		            O31.y = stage.canvas.height - 210;
 		            O31.vy *= -1;
 		        }
+
 		      	O32.vy += 1;
 		        O32.vx *= 0.95;
 		        O32.vy *= 0.95;
@@ -1518,6 +1465,7 @@
 		            O32.y = stage.canvas.height - 215;
 		            O32.vy *= -1;
 		        }
+
 		      	O33.vy += 1;
 		        O33.vx *= 0.95;
 		        O33.vy *= 0.95;
@@ -1527,6 +1475,7 @@
 		            O33.y = stage.canvas.height - 220;
 		            O33.vy *= -1;
 		        }
+
 		      	O34.vy += 1;
 		        O34.vx *= 0.95;
 		        O34.vy *= 0.95;
@@ -1536,6 +1485,7 @@
 		            O34.y = stage.canvas.height - 225;
 		            O34.vy *= -1;
 		        }
+
 		      	O35.vy += 1;
 		        O35.vx *= 0.95;
 		        O35.vy *= 0.95;
@@ -1545,6 +1495,7 @@
 		            O35.y = stage.canvas.height - 230;
 		            O35.vy *= -1;
 		        }
+
 		      	O36.vy += 1;
 		        O36.vx *= 0.95;
 		        O36.vy *= 0.95;
@@ -1554,6 +1505,7 @@
 		            O36.y = stage.canvas.height - 235;
 		            O36.vy *= -1;
 		        }
+
 		      	O37.vy += 1;
 		        O37.vx *= 0.95;
 		        O37.vy *= 0.95;
@@ -1563,6 +1515,8 @@
 		            O37.y = stage.canvas.height - 240;
 		            O37.vy *= -1;
 		        }
+
+
 		        H1.vy += 1;
 		        H1.vx *= 0.95;
 		        H1.vy *= 0.95;
@@ -1572,6 +1526,7 @@
 		            H1.y = stage.canvas.height - 150;
 		            H1.vy *= -1;
 		        }
+
 		      	H2.vy += 1;
 		        H2.vx *= 0.95;
 		        H2.vy *= 0.95;
@@ -1581,6 +1536,7 @@
 		            H2.y = stage.canvas.height - 160;
 		            H2.vy *= -1;
 		        }
+
 		      	H3.vy += 1;
 		        H3.vx *= 0.95;
 		        H3.vy *= 0.95;
@@ -1590,6 +1546,7 @@
 		            H3.y = stage.canvas.height - 170;
 		            H3.vy *= -1;
 		        }
+
 		      	H4.vy += 1;
 		        H4.vx *= 0.95;
 		        H4.vy *= 0.95;
@@ -1599,6 +1556,7 @@
 		            H4.y = stage.canvas.height - 180;
 		            H4.vy *= -1;
 		        }
+
 		      	H5.vy += 1;
 		        H5.vx *= 0.95;
 		        H5.vy *= 0.95;
@@ -1608,6 +1566,7 @@
 		            H5.y = stage.canvas.height - 190;
 		            H5.vy *= -1;
 		        }
+
 		      	H6.vy += 1;
 		        H6.vx *= 0.95;
 		        H6.vy *= 0.95;
@@ -1617,6 +1576,7 @@
 		            H6.y = stage.canvas.height - 200;
 		            H6.vy *= -1;
 		        }
+
 		      	H7.vy += 1;
 		        H7.vx *= 0.95;
 		        H7.vy *= 0.95;
@@ -1626,6 +1586,7 @@
 		            H7.y = stage.canvas.height - 210;
 		            H7.vy *= -1;
 		        }
+
 		      	H8.vy += 1;
 		        H8.vx *= 0.95;
 		        H8.vy *= 0.95;
@@ -1635,6 +1596,7 @@
 		            H8.y = stage.canvas.height - 220;
 		            H8.vy *= -1;
 		        }
+
 		      	H9.vy += 1;
 		        H9.vx *= 0.95;
 		        H9.vy *= 0.95;
@@ -1644,6 +1606,7 @@
 		            H9.y = stage.canvas.height - 230;
 		            H9.vy *= -1;
 		        }
+
 		      	H10.vy += 1;
 		        H10.vx *= 0.95;
 		        H10.vy *= 0.95;
@@ -1653,6 +1616,7 @@
 		            H10.y = stage.canvas.height - 240;
 		            H10.vy *= -1;
 		        }
+
 		      	H11.vy += 1.05;
 		        H11.vx *= 0.95;
 		        H11.vy *= 0.95;
@@ -1662,6 +1626,7 @@
 		            H11.y = stage.canvas.height - 195;
 		            H11.vy *= -1;
 		        }
+
 		      	H12.vy += 1.1;
 		        H12.vx *= 0.95;
 		        H12.vy *= 0.95;
@@ -1671,6 +1636,7 @@
 		            H12.y = stage.canvas.height - 195;
 		            H12.vy *= -1;
 		        }
+
 		      	H13.vy += 1.15;
 		        H13.vx *= 0.95;
 		        H13.vy *= 0.95;
@@ -1680,6 +1646,7 @@
 		            H13.y = stage.canvas.height - 195;
 		            H13.vy *= -1;
 		        }
+
 		      	H14.vy += 1.1;
 		        H14.vx *= 0.95;
 		        H14.vy *= 0.95;
@@ -1689,6 +1656,7 @@
 		            H14.y = stage.canvas.height - 195;
 		            H14.vy *= -1;
 		        }
+
 		      	H15.vy += 1.05;
 		        H15.vx *= 0.95;
 		        H15.vy *= 0.95;
@@ -1698,6 +1666,7 @@
 		            H15.y = stage.canvas.height - 195;
 		            H15.vy *= -1;
 		        }
+
 		      	H16.vy += 1;
 		        H16.vx *= 0.95;
 		        H16.vy *= 0.95;
@@ -1707,6 +1676,7 @@
 		            H16.y = stage.canvas.height - 150;
 		            H16.vy *= -1;
 		        }
+
 		      	H17.vy += 1;
 		        H17.vx *= 0.95;
 		        H17.vy *= 0.95;
@@ -1716,6 +1686,7 @@
 		            H17.y = stage.canvas.height - 160;
 		            H17.vy *= -1;
 		        }
+
 		      	H18.vy += 1;
 		        H18.vx *= 0.95;
 		        H18.vy *= 0.95;
@@ -1725,6 +1696,7 @@
 		            H18.y = stage.canvas.height - 170;
 		            H18.vy *= -1;
 		        }
+
 		      	H20.vy += 1;
 		        H20.vx *= 0.95;
 		        H20.vy *= 0.95;
@@ -1734,6 +1706,7 @@
 		            H20.y = stage.canvas.height - 180;
 		            H20.vy *= -1;
 		        }
+
 		      	H21.vy += 1;
 		        H21.vx *= 0.95;
 		        H21.vy *= 0.95;
@@ -1743,6 +1716,7 @@
 		            H21.y = stage.canvas.height - 190;
 		            H21.vy *= -1;
 		        }
+
 		      	H22.vy += 1;
 		        H22.vx *= 0.95;
 		        H22.vy *= 0.95;
@@ -1752,6 +1726,7 @@
 		            H22.y = stage.canvas.height - 200;
 		            H22.vy *= -1;
 		        }
+
 		      	H23.vy += 1;
 		        H23.vx *= 0.95;
 		        H23.vy *= 0.95;
@@ -1761,6 +1736,7 @@
 		            H23.y = stage.canvas.height - 210;
 		            H23.vy *= -1;
 		        }
+
 		      	H24.vy += 1;
 		        H24.vx *= 0.95;
 		        H24.vy *= 0.95;
@@ -1770,6 +1746,7 @@
 		            H24.y = stage.canvas.height - 220;
 		            H24.vy *= -1;
 		        }
+
 		      	H25.vy += 1;
 		        H25.vx *= 0.95;
 		        H25.vy *= 0.95;
@@ -1779,6 +1756,7 @@
 		            H25.y = stage.canvas.height - 230;
 		            H25.vy *= -1;
 		        }
+
 		      	H26.vy += 1;
 		        H26.vx *= 0.95;
 		        H26.vy *= 0.95;
@@ -1789,6 +1767,7 @@
 		            H26.vy *= -1;
 		        }
 
+
 		      	AA1.vy += 1;
 		        AA1.vx *= 0.95;
 		        AA1.vy *= 0.95;
@@ -1798,6 +1777,7 @@
 		            AA1.y = stage.canvas.height - 150;
 		            AA1.vy *= -1;
 		        }
+
 		        AA2.vy += 1;
 		        AA2.vx *= 0.95;
 		        AA2.vy *= 0.95;
@@ -1807,6 +1787,7 @@
 		            AA2.y = stage.canvas.height - 160;
 		            AA2.vy *= -1;
 		        }
+
 		        AA3.vy += 1;
 		        AA3.vx *= 0.95;
 		        AA3.vy *= 0.95;
@@ -1816,6 +1797,7 @@
 		            AA3.y = stage.canvas.height - 170;
 		            AA3.vy *= -1;
 		        }
+
 		        AA4.vy += 1;
 		        AA4.vx *= 0.95;
 		        AA4.vy *= 0.95;
@@ -1825,6 +1807,7 @@
 		            AA4.y = stage.canvas.height - 180;
 		            AA4.vy *= -1;
 		        }
+
 		        AA5.vy += 1;
 		        AA5.vx *= 0.95;
 		        AA5.vy *= 0.95;
@@ -1834,6 +1817,7 @@
 		            AA5.y = stage.canvas.height - 190;
 		            AA5.vy *= -1;
 		        }
+
 		        AA6.vy += 1;
 		        AA6.vx *= 0.95;
 		        AA6.vy *= 0.95;
@@ -1843,6 +1827,7 @@
 		            AA6.y = stage.canvas.height - 200;
 		            AA6.vy *= -1;
 		        }
+
 		        AA7.vy += 1;
 		        AA7.vx *= 0.95;
 		        AA7.vy *= 0.95;
@@ -1852,6 +1837,7 @@
 		            AA7.y = stage.canvas.height - 210;
 		            AA7.vy *= -1;
 		        }
+
 		        AA8.vy += 1;
 		        AA8.vx *= 0.95;
 		        AA8.vy *= 0.95;
@@ -1861,6 +1847,7 @@
 		            AA8.y = stage.canvas.height - 220;
 		            AA8.vy *= -1;
 		        }
+
 		        AA9.vy += 1;
 		        AA9.vx *= 0.95;
 		        AA9.vy *= 0.95;
@@ -1870,6 +1857,7 @@
 		            AA9.y = stage.canvas.height - 160;
 		            AA9.vy *= -1;
 		        }
+
 		        AA10.vy += 1;
 		        AA10.vx *= 0.95;
 		        AA10.vy *= 0.95;
@@ -1879,6 +1867,7 @@
 		            AA10.y = stage.canvas.height - 170;
 		            AA10.vy *= -1;
 		        }
+
 		        AA11.vy += 1;
 		        AA11.vx *= 0.95;
 		        AA11.vy *= 0.95;
@@ -1888,6 +1877,7 @@
 		            AA11.y = stage.canvas.height - 180;
 		            AA11.vy *= -1;
 		        }
+
 		        AA12.vy += 1;
 		        AA12.vx *= 0.95;
 		        AA12.vy *= 0.95;
@@ -1897,6 +1887,7 @@
 		            AA12.y = stage.canvas.height - 190;
 		            AA12.vy *= -1;
 		        }
+
 		        AA13.vy += 1;
 		        AA13.vx *= 0.95;
 		        AA13.vy *= 0.95;
@@ -1906,6 +1897,7 @@
 		            AA13.y = stage.canvas.height - 200;
 		            AA13.vy *= -1;
 		        }
+
 		        AA14.vy += 1;
 		        AA14.vx *= 0.95;
 		        AA14.vy *= 0.95;
@@ -1915,6 +1907,7 @@
 		            AA14.y = stage.canvas.height - 210;
 		            AA14.vy *= -1;
 		        }
+
 		        AA15.vy += 1;
 		        AA15.vx *= 0.95;
 		        AA15.vy *= 0.95;
@@ -1924,6 +1917,7 @@
 		            AA15.y = stage.canvas.height - 220;
 		            AA15.vy *= -1;
 		        }
+
 		        AA16.vy += 1;
 		        AA16.vx *= 0.95;
 		        AA16.vy *= 0.95;
@@ -1933,6 +1927,7 @@
 		            AA16.y = stage.canvas.height - 230;
 		            AA16.vy *= -1;
 		        }
+
 		        AA17.vy += 1;
 		        AA17.vx *= 0.95;
 		        AA17.vy *= 0.95;
@@ -1942,6 +1937,7 @@
 		            AA17.y = stage.canvas.height - 240;
 		            AA17.vy *= -1;
 		        }
+
 		        AA18.vy += 1;
 		        AA18.vx *= 0.95;
 		        AA18.vy *= 0.95;
@@ -1951,6 +1947,7 @@
 		            AA18.y = stage.canvas.height - 230;
 		            AA18.vy *= -1;
 		        }
+
 		        AA19.vy += 1;
 		        AA19.vx *= 0.95;
 		        AA19.vy *= 0.95;
@@ -1960,6 +1957,7 @@
 		            AA19.y = stage.canvas.height - 240;
 		            AA19.vy *= -1;
 		        }
+
 		        AA20.vy += 1.05;
 		        AA20.vx *= 0.95;
 		        AA20.vy *= 0.95;
@@ -1969,6 +1967,7 @@
 		            AA20.y = stage.canvas.height - 210;
 		            AA20.vy *= -1;
 		        }
+
 		        AA21.vy += 1.1;
 		        AA21.vx *= 0.95;
 		        AA21.vy *= 0.95;
@@ -1978,6 +1977,7 @@
 		            AA21.y = stage.canvas.height - 210;
 		            AA21.vy *= -1;
 		        }
+
 		        AA22.vy += 1.05;
 		        AA22.vx *= 0.95;
 		        AA22.vy *= 0.95;
@@ -1987,8 +1987,8 @@
 		            AA22.y = stage.canvas.height - 210;
 		            AA22.vy *= -1;
 		        }  
-
 			}
+
 
 			if ( m%2 == 0 ) {
 				A1.vy += -1;
@@ -2000,6 +2000,7 @@
 		            A1.y = stage.canvas.height - 550;
 		            A1.vy *= -1; 
 		        }
+
 		        A2.vy += -1;
 		        A2.vx *= 0.95;
 		        A2.vy *= 0.95;
@@ -2009,6 +2010,7 @@
 		            A2.y = stage.canvas.height - 550;
 		            A2.vy *= -1; 
 		        }
+
 		        A3.vy += -1;
 		        A3.vx *= 0.95;
 		        A3.vy *= 0.95;
@@ -2018,6 +2020,7 @@
 		            A3.y = stage.canvas.height - 550;
 		            A3.vy *= -1; 
 		        }
+
 		        A4.vy += -1;
 		        A4.vx *= 0.95;
 		        A4.vy *= 0.95;
@@ -2027,6 +2030,7 @@
 		            A4.y = stage.canvas.height - 550;
 		            A4.vy *= -1; 
 		        }
+
 		        A5.vy += -1;
 		        A5.vx *= 0.95;
 		        A5.vy *= 0.95;
@@ -2036,6 +2040,7 @@
 		            A5.y = stage.canvas.height - 550;
 		            A5.vy *= -1; 
 		        }
+
 		        A6.vy += -1;
 		        A6.vx *= 0.95;
 		        A6.vy *= 0.95;
@@ -2045,6 +2050,7 @@
 		            A6.y = stage.canvas.height - 550;
 		            A6.vy *= -1; 
 		        }
+
 		        A7.vy += -1;
 		        A7.vx *= 0.95;
 		        A7.vy *= 0.95;
@@ -2054,6 +2060,7 @@
 		            A7.y = stage.canvas.height - 550;
 		            A7.vy *= -1; 
 		        }
+
 		        A8.vy += -1;
 		        A8.vx *= 0.95;
 		        A8.vy *= 0.95;
@@ -2063,6 +2070,7 @@
 		            A8.y = stage.canvas.height - 550;
 		            A8.vy *= -1; 
 		        }
+
 		        A9.vy += -1;
 		        A9.vx *= 0.95;
 		        A9.vy *= 0.95;
@@ -2072,6 +2080,7 @@
 		            A9.y = stage.canvas.height - 550;
 		            A9.vy *= -1; 
 		        }
+
 		        A10.vy += -1;
 		        A10.vx *= 0.95;
 		        A10.vy *= 0.95;
@@ -2081,6 +2090,7 @@
 		            A10.y = stage.canvas.height - 550;
 		            A10.vy *= -1; 
 		        }
+
 		        A11.vy += -1;
 		        A11.vx *= 0.95;
 		        A11.vy *= 0.95;
@@ -2090,6 +2100,7 @@
 		            A11.y = stage.canvas.height - 550;
 		            A11.vy *= -1; 
 		        }
+
 		        A12.vy += -1;
 		        A12.vx *= 0.95;
 		        A12.vy *= 0.95;
@@ -2099,6 +2110,7 @@
 		            A12.y = stage.canvas.height - 550;
 		            A12.vy *= -1; 
 		        }
+
 		        A13.vy += -1;
 		        A13.vx *= 0.95;
 		        A13.vy *= 0.95;
@@ -2108,6 +2120,7 @@
 		            A13.y = stage.canvas.height - 550;
 		            A13.vy *= -1; 
 		        }
+
 		        A14.vy += -1;
 		        A14.vx *= 0.95;
 		        A14.vy *= 0.95;
@@ -2117,6 +2130,7 @@
 		            A14.y = stage.canvas.height - 550;
 		            A14.vy *= -1; 
 		        }
+
 		        A15.vy += -1;
 		        A15.vx *= 0.95;
 		        A15.vy *= 0.95;
@@ -2126,6 +2140,7 @@
 		            A15.y = stage.canvas.height - 550;
 		            A15.vy *= -1; 
 		        }
+
 		        A16.vy += -1;
 		        A16.vx *= 0.95;
 		        A16.vy *= 0.95;
@@ -2135,6 +2150,7 @@
 		            A16.y = stage.canvas.height - 550;
 		            A16.vy *= -1; 
 		        }
+
 		        A17.vy += -1;
 		        A17.vx *= 0.95;
 		        A17.vy *= 0.95;
@@ -2144,6 +2160,7 @@
 		            A17.y = stage.canvas.height - 550;
 		            A17.vy *= -1; 
 		        }
+
 		        A18.vy += -1;
 		        A18.vx *= 0.95;
 		        A18.vy *= 0.95;
@@ -2153,6 +2170,7 @@
 		            A18.y = stage.canvas.height - 550;
 		            A18.vy *= -1; 
 		        }
+
 		        A19.vy += -1;
 		        A19.vx *= 0.95;
 		        A19.vy *= 0.95;
@@ -2162,6 +2180,7 @@
 		            A19.y = stage.canvas.height - 550;
 		            A19.vy *= -1; 
 		        }
+
 		        A20.vy += -1;
 		        A20.vx *= 0.95;
 		        A20.vy *= 0.95;
@@ -2171,6 +2190,7 @@
 		            A20.y = stage.canvas.height - 550;
 		            A20.vy *= -1; 
 		        }
+
 		        A21.vy += -1;
 		        A21.vx *= 0.95;
 		        A21.vy *= 0.95;
@@ -2180,6 +2200,7 @@
 		            A21.y = stage.canvas.height - 550;
 		            A21.vy *= -1; 
 		        }
+
 		        A22.vy += -1;
 		        A22.vx *= 0.95;
 		        A22.vy *= 0.95;
@@ -2190,6 +2211,7 @@
 		            A22.vy *= -1; 
 		        }
 
+
 		        L1.vy += -1;
 		        L1.vx *= 0.95;
 		        L1.vy *= 0.95;
@@ -2199,6 +2221,7 @@
 		            L1.y = stage.canvas.height - 550;
 		            L1.vy *= -1; 
 		        }
+
 		        L2.vy += -1;
 		        L2.vx *= 0.95;
 		        L2.vy *= 0.95;
@@ -2208,6 +2231,7 @@
 		            L2.y = stage.canvas.height - 550;
 		            L2.vy *= -1; 
 		        }
+
 		        L3.vy += -1;
 		        L3.vx *= 0.95;
 		        L3.vy *= 0.95;
@@ -2217,6 +2241,7 @@
 		            L3.y = stage.canvas.height - 550;
 		            L3.vy *= -1; 
 		        }
+
 		        L4.vy += -1;
 		        L4.vx *= 0.95;
 		        L4.vy *= 0.95;
@@ -2226,6 +2251,7 @@
 		            L4.y = stage.canvas.height - 550;
 		            L4.vy *= -1; 
 		        }
+
 		        L5.vy += -1;
 		        L5.vx *= 0.95;
 		        L5.vy *= 0.95;
@@ -2235,6 +2261,7 @@
 		            L5.y = stage.canvas.height - 550;
 		            L5.vy *= -1; 
 		        }
+
 		        L6.vy += -1;
 		        L6.vx *= 0.95;
 		        L6.vy *= 0.95;
@@ -2244,6 +2271,7 @@
 		            L6.y = stage.canvas.height - 550;
 		            L6.vy *= -1; 
 		        }
+
 		        L7.vy += -1;
 		        L7.vx *= 0.95;
 		        L7.vy *= 0.95;
@@ -2253,6 +2281,7 @@
 		            L7.y = stage.canvas.height - 550;
 		            L7.vy *= -1; 
 		        }
+
 		        L8.vy += -1;
 		        L8.vx *= 0.95;
 		        L8.vy *= 0.95;
@@ -2262,6 +2291,7 @@
 		            L8.y = stage.canvas.height - 550;
 		            L8.vy *= -1; 
 		        }
+
 		        L9.vy += -1;
 		        L9.vx *= 0.95;
 		        L9.vy *= 0.95;
@@ -2271,6 +2301,7 @@
 		            L9.y = stage.canvas.height - 550;
 		            L9.vy *= -1; 
 		        }
+
 		        L10.vy += -1;
 		        L10.vx *= 0.95;
 		        L10.vy *= 0.95;
@@ -2280,6 +2311,7 @@
 		            L10.y = stage.canvas.height - 550;
 		            L10.vy *= -1; 
 		        }
+
 		        L11.vy += -1;
 		        L11.vx *= 0.95;
 		        L11.vy *= 0.95;
@@ -2289,6 +2321,7 @@
 		            L11.y = stage.canvas.height - 550;
 		            L11.vy *= -1; 
 		        }
+
 		        L12.vy += -1;
 		        L12.vx *= 0.95;
 		        L12.vy *= 0.95;
@@ -2298,6 +2331,7 @@
 		            L12.y = stage.canvas.height - 550;
 		            L12.vy *= -1; 
 		        }
+
 		        L13.vy += -1;
 		        L13.vx *= 0.95;
 		        L13.vy *= 0.95;
@@ -2307,6 +2341,7 @@
 		            L13.y = stage.canvas.height - 550;
 		            L13.vy *= -1; 
 		        }
+
 		        L14.vy += -1;
 		        L14.vx *= 0.95;
 		        L14.vy *= 0.95;
@@ -2316,6 +2351,7 @@
 		            L14.y = stage.canvas.height - 550;
 		            L14.vy *= -1; 
 		        }
+
 		        L15.vy += -1;
 		        L15.vx *= 0.95;
 		        L15.vy *= 0.95;
@@ -2326,6 +2362,7 @@
 		            L15.vy *= -1; 
 		        }
 
+
 		        O1.vy += -1;
 		        O1.vx *= 0.95;
 		        O1.vy *= 0.95;
@@ -2335,6 +2372,7 @@
 		            O1.y = stage.canvas.height - 550;
 		            O1.vy *= -1; 
 		        }
+
 		    	O2.vy += -1;
 		        O2.vx *= 0.95;
 		        O2.vy *= 0.95;
@@ -2344,6 +2382,7 @@
 		            O2.y = stage.canvas.height - 550;
 		            O2.vy *= -1; 
 		        }
+
 		    	O3.vy += -1;
 		        O3.vx *= 0.95;
 		        O3.vy *= 0.95;
@@ -2353,6 +2392,7 @@
 		            O3.y = stage.canvas.height - 550;
 		            O3.vy *= -1; 
 		        }
+
 		    	O4.vy += -1;
 		        O4.vx *= 0.95;
 		        O4.vy *= 0.95;
@@ -2362,6 +2402,7 @@
 		            O4.y = stage.canvas.height - 550;
 		            O4.vy *= -1; 
 		        }
+
 		    	O5.vy += -1;
 		        O5.vx *= 0.95;
 		        O5.vy *= 0.95;
@@ -2371,6 +2412,7 @@
 		            O5.y = stage.canvas.height - 550;
 		            O5.vy *= -1; 
 		        }
+
 		    	O6.vy += -1;
 		        O6.vx *= 0.95;
 		        O6.vy *= 0.95;
@@ -2380,6 +2422,7 @@
 		            O6.y = stage.canvas.height - 550;
 		            O6.vy *= -1; 
 		        }
+
 		    	O7.vy += -1;
 		        O7.vx *= 0.95;
 		        O7.vy *= 0.95;
@@ -2389,6 +2432,7 @@
 		            O7.y = stage.canvas.height - 550;
 		            O7.vy *= -1; 
 		        }
+
 		    	O8.vy += -1;
 		        O8.vx *= 0.95;
 		        O8.vy *= 0.95;
@@ -2398,6 +2442,7 @@
 		            O8.y = stage.canvas.height - 550;
 		            O8.vy *= -1; 
 		        }
+
 		    	O9.vy += -1;
 		        O9.vx *= 0.95;
 		        O9.vy *= 0.95;
@@ -2407,6 +2452,7 @@
 		            O9.y = stage.canvas.height - 550;
 		            O9.vy *= -1; 
 		        }
+
 		    	O10.vy += -1;
 		        O10.vx *= 0.95;
 		        O10.vy *= 0.95;
@@ -2416,6 +2462,7 @@
 		            O10.y = stage.canvas.height - 550;
 		            O10.vy *= -1; 
 		        }
+
 		    	O11.vy += -1;
 		        O11.vx *= 0.95;
 		        O11.vy *= 0.95;
@@ -2425,6 +2472,7 @@
 		            O11.y = stage.canvas.height - 550;
 		            O11.vy *= -1; 
 		        }
+
 		    	O12.vy += -1;
 		        O12.vx *= 0.95;
 		        O12.vy *= 0.95;
@@ -2434,6 +2482,7 @@
 		            O12.y = stage.canvas.height - 550;
 		            O12.vy *= -1; 
 		        }
+
 		    	O13.vy += -1;
 		        O13.vx *= 0.95;
 		        O13.vy *= 0.95;
@@ -2443,6 +2492,7 @@
 		            O13.y = stage.canvas.height - 550;
 		            O13.vy *= -1; 
 		        }
+
 		    	O14.vy += -1;
 		        O14.vx *= 0.95;
 		        O14.vy *= 0.95;
@@ -2452,6 +2502,7 @@
 		            O14.y = stage.canvas.height - 550;
 		            O14.vy *= -1; 
 		        }
+
 		    	O15.vy += -1;
 		        O15.vx *= 0.95;
 		        O15.vy *= 0.95;
@@ -2461,6 +2512,7 @@
 		            O15.y = stage.canvas.height - 550;
 		            O15.vy *= -1; 
 		        }
+
 		    	O16.vy += -1;
 		        O16.vx *= 0.95;
 		        O16.vy *= 0.95;
@@ -2470,6 +2522,7 @@
 		            O16.y = stage.canvas.height - 550;
 		            O16.vy *= -1; 
 		        }
+
 		    	O17.vy += -1;
 		        O17.vx *= 0.95;
 		        O17.vy *= 0.95;
@@ -2479,6 +2532,7 @@
 		            O17.y = stage.canvas.height - 550;
 		            O17.vy *= -1; 
 		        }
+
 		    	O18.vy += -1;
 		        O18.vx *= 0.95;
 		        O18.vy *= 0.95;
@@ -2488,6 +2542,7 @@
 		            O18.y = stage.canvas.height - 550;
 		            O18.vy *= -1; 
 		        }
+
 		    	O19.vy += -1;
 		        O19.vx *= 0.95;
 		        O19.vy *= 0.95;
@@ -2497,6 +2552,7 @@
 		            O19.y = stage.canvas.height - 550;
 		            O19.vy *= -1; 
 		        }
+
 		    	O20.vy += -1;
 		        O20.vx *= 0.95;
 		        O20.vy *= 0.95;
@@ -2506,6 +2562,7 @@
 		            O20.y = stage.canvas.height - 550;
 		            O20.vy *= -1; 
 		        }
+
 		    	O21.vy += -1;
 		        O21.vx *= 0.95;
 		        O21.vy *= 0.95;
@@ -2515,6 +2572,7 @@
 		            O21.y = stage.canvas.height - 550;
 		            O21.vy *= -1; 
 		        }
+
 		    	O22.vy += -1;
 		        O22.vx *= 0.95;
 		        O22.vy *= 0.95;
@@ -2524,6 +2582,7 @@
 		            O22.y = stage.canvas.height - 550;
 		            O22.vy *= -1; 
 		        }
+
 		    	O23.vy += -1;
 		        O23.vx *= 0.95;
 		        O23.vy *= 0.95;
@@ -2533,6 +2592,7 @@
 		            O23.y = stage.canvas.height - 550;
 		            O23.vy *= -1; 
 		        }
+
 		    	O24.vy += -1;
 		        O24.vx *= 0.95;
 		        O24.vy *= 0.95;
@@ -2542,6 +2602,7 @@
 		            O24.y = stage.canvas.height - 550;
 		            O24.vy *= -1; 
 		        }
+
 		    	O25.vy += -1;
 		        O25.vx *= 0.95;
 		        O25.vy *= 0.95;
@@ -2551,6 +2612,7 @@
 		            O25.y = stage.canvas.height - 550;
 		            O25.vy *= -1; 
 		        }
+
 		    	O26.vy += -1;
 		        O26.vx *= 0.95;
 		        O26.vy *= 0.95;
@@ -2560,6 +2622,7 @@
 		            O26.y = stage.canvas.height - 550;
 		            O26.vy *= -1; 
 		        }
+
 		    	O27.vy += -1;
 		        O27.vx *= 0.95;
 		        O27.vy *= 0.95;
@@ -2569,6 +2632,7 @@
 		            O27.y = stage.canvas.height - 550;
 		            O27.vy *= -1; 
 		        }
+
 		    	O28.vy += -1;
 		        O28.vx *= 0.95;
 		        O28.vy *= 0.95;
@@ -2578,6 +2642,7 @@
 		            O28.y = stage.canvas.height - 550;
 		            O28.vy *= -1; 
 		        }
+
 		    	O29.vy += -1;
 		        O29.vx *= 0.95;
 		        O29.vy *= 0.95;
@@ -2587,6 +2652,7 @@
 		            O29.y = stage.canvas.height - 550;
 		            O29.vy *= -1; 
 		        }
+
 		    	O30.vy += -1;
 		        O30.vx *= 0.95;
 		        O30.vy *= 0.95;
@@ -2596,6 +2662,7 @@
 		            O30.y = stage.canvas.height - 550;
 		            O30.vy *= -1; 
 		        }
+
 		    	O31.vy += -1;
 		        O31.vx *= 0.95;
 		        O31.vy *= 0.95;
@@ -2605,6 +2672,7 @@
 		            O31.y = stage.canvas.height - 550;
 		            O31.vy *= -1; 
 		        }
+
 		    	O32.vy += -1;
 		        O32.vx *= 0.95;
 		        O32.vy *= 0.95;
@@ -2614,6 +2682,7 @@
 		            O32.y = stage.canvas.height - 550;
 		            O32.vy *= -1; 
 		        }
+
 		    	O33.vy += -1;
 		        O33.vx *= 0.95;
 		        O33.vy *= 0.95;
@@ -2623,6 +2692,7 @@
 		            O33.y = stage.canvas.height - 550;
 		            O33.vy *= -1; 
 		        }
+
 		    	O34.vy += -1;
 		        O34.vx *= 0.95;
 		        O34.vy *= 0.95;
@@ -2632,6 +2702,7 @@
 		            O34.y = stage.canvas.height - 550;
 		            O34.vy *= -1; 
 		        }
+
 		    	O35.vy += -1;
 		        O35.vx *= 0.95;
 		        O35.vy *= 0.95;
@@ -2641,6 +2712,7 @@
 		            O35.y = stage.canvas.height - 550;
 		            O35.vy *= -1; 
 		        }
+
 		    	O36.vy += -1;
 		        O36.vx *= 0.95;
 		        O36.vy *= 0.95;
@@ -2650,6 +2722,7 @@
 		            O36.y = stage.canvas.height - 550;
 		            O36.vy *= -1; 
 		        }
+
 		    	O37.vy += -1;
 		        O37.vx *= 0.95;
 		        O37.vy *= 0.95;
@@ -2659,6 +2732,8 @@
 		            O37.y = stage.canvas.height - 550;
 		            O37.vy *= -1; 
 		        }
+
+
 		        H1.vy += -1;
 		        H1.vx *= 0.95;
 		        H1.vy *= 0.95;
@@ -2668,6 +2743,7 @@
 		            H1.y = stage.canvas.height - 550;
 		            H1.vy *= -1; 
 		        }
+
 		    	H2.vy += -1;
 		        H2.vx *= 0.95;
 		        H2.vy *= 0.95;
@@ -2677,6 +2753,7 @@
 		            H2.y = stage.canvas.height - 550;
 		            H2.vy *= -1; 
 		        }
+
 		    	H3.vy += -1;
 		        H3.vx *= 0.95;
 		        H3.vy *= 0.95;
@@ -2686,6 +2763,7 @@
 		            H3.y = stage.canvas.height - 550;
 		            H3.vy *= -1; 
 		        }
+
 		    	H4.vy += -1;
 		        H4.vx *= 0.95;
 		        H4.vy *= 0.95;
@@ -2695,6 +2773,7 @@
 		            H4.y = stage.canvas.height - 550;
 		            H4.vy *= -1; 
 		        }
+
 		    	H5.vy += -1;
 		        H5.vx *= 0.95;
 		        H5.vy *= 0.95;
@@ -2704,6 +2783,7 @@
 		            H5.y = stage.canvas.height - 550;
 		            H5.vy *= -1; 
 		        }
+
 		    	H6.vy += -1;
 		        H6.vx *= 0.95;
 		        H6.vy *= 0.95;
@@ -2713,6 +2793,7 @@
 		            H6.y = stage.canvas.height - 550;
 		            H6.vy *= -1; 
 		        }
+
 		    	H7.vy += -1;
 		        H7.vx *= 0.95;
 		        H7.vy *= 0.95;
@@ -2722,6 +2803,7 @@
 		            H7.y = stage.canvas.height - 550;
 		            H7.vy *= -1; 
 		        }
+
 		    	H8.vy += -1;
 		        H8.vx *= 0.95;
 		        H8.vy *= 0.95;
@@ -2731,6 +2813,7 @@
 		            H8.y = stage.canvas.height - 550;
 		            H8.vy *= -1; 
 		        }
+
 		    	H9.vy += -1;
 		        H9.vx *= 0.95;
 		        H9.vy *= 0.95;
@@ -2740,6 +2823,7 @@
 		            H9.y = stage.canvas.height - 550;
 		            H9.vy *= -1; 
 		        }
+
 		    	H10.vy += -1;
 		        H10.vx *= 0.95;
 		        H10.vy *= 0.95;
@@ -2749,6 +2833,7 @@
 		            H10.y = stage.canvas.height - 550;
 		            H10.vy *= -1; 
 		        }
+
 		    	H11.vy += -1;
 		        H11.vx *= 0.95;
 		        H11.vy *= 0.95;
@@ -2758,6 +2843,7 @@
 		            H11.y = stage.canvas.height - 550;
 		            H11.vy *= -1; 
 		        }
+
 		    	H12.vy += -1;
 		        H12.vx *= 0.95;
 		        H12.vy *= 0.95;
@@ -2767,6 +2853,7 @@
 		            H12.y = stage.canvas.height - 550;
 		            H12.vy *= -1; 
 		        }
+
 		    	H13.vy += -1;
 		        H13.vx *= 0.95;
 		        H13.vy *= 0.95;
@@ -2776,6 +2863,7 @@
 		            H13.y = stage.canvas.height - 550;
 		            H13.vy *= -1; 
 		        }
+
 		    	H14.vy += -1;
 		        H14.vx *= 0.95;
 		        H14.vy *= 0.95;
@@ -2785,6 +2873,7 @@
 		            H14.y = stage.canvas.height - 550;
 		            H14.vy *= -1; 
 		        }
+
 		    	H15.vy += -1;
 		        H15.vx *= 0.95;
 		        H15.vy *= 0.95;
@@ -2794,6 +2883,7 @@
 		            H15.y = stage.canvas.height - 550;
 		            H15.vy *= -1; 
 		        }
+
 		    	H16.vy += -1;
 		        H16.vx *= 0.95;
 		        H16.vy *= 0.95;
@@ -2803,6 +2893,7 @@
 		            H16.y = stage.canvas.height - 550;
 		            H16.vy *= -1; 
 		        }
+
 		    	H17.vy += -1;
 		        H17.vx *= 0.95;
 		        H17.vy *= 0.95;
@@ -2812,6 +2903,7 @@
 		            H17.y = stage.canvas.height - 550;
 		            H17.vy *= -1; 
 		        }
+
 		    	H18.vy += -1;
 		        H18.vx *= 0.95;
 		        H18.vy *= 0.95;
@@ -2821,6 +2913,7 @@
 		            H18.y = stage.canvas.height - 550;
 		            H18.vy *= -1; 
 		        }
+
 		    	H20.vy += -1;
 		        H20.vx *= 0.95;
 		        H20.vy *= 0.95;
@@ -2830,6 +2923,7 @@
 		            H20.y = stage.canvas.height - 550;
 		            H20.vy *= -1; 
 		        }
+
 		    	H21.vy += -1;
 		        H21.vx *= 0.95;
 		        H21.vy *= 0.95;
@@ -2839,6 +2933,7 @@
 		            H21.y = stage.canvas.height - 550;
 		            H21.vy *= -1; 
 		        }
+
 		    	H22.vy += -1;
 		        H22.vx *= 0.95;
 		        H22.vy *= 0.95;
@@ -2848,6 +2943,7 @@
 		            H22.y = stage.canvas.height - 550;
 		            H22.vy *= -1; 
 		        }
+
 		    	H23.vy += -1;
 		        H23.vx *= 0.95;
 		        H23.vy *= 0.95;
@@ -2857,6 +2953,7 @@
 		            H23.y = stage.canvas.height - 550;
 		            H23.vy *= -1; 
 		        }
+
 		    	H24.vy += -1;
 		        H24.vx *= 0.95;
 		        H24.vy *= 0.95;
@@ -2866,6 +2963,7 @@
 		            H24.y = stage.canvas.height - 550;
 		            H24.vy *= -1; 
 		        }
+
 		    	H25.vy += -1;
 		        H25.vx *= 0.95;
 		        H25.vy *= 0.95;
@@ -2875,6 +2973,7 @@
 		            H25.y = stage.canvas.height - 550;
 		            H25.vy *= -1; 
 		        }
+
 		    	H26.vy += -1;
 		        H26.vx *= 0.95;
 		        H26.vy *= 0.95;
@@ -2884,6 +2983,8 @@
 		            H26.y = stage.canvas.height - 550;
 		            H26.vy *= -1; 
 		        }
+
+
 		        AA1.vy += -1;
 		        AA1.vx *= 0.95;
 		        AA1.vy *= 0.95;
@@ -2893,6 +2994,7 @@
 		            AA1.y = stage.canvas.height - 550;
 		            AA1.vy *= -1; 
 		        }
+
 		        AA2.vy += -1;
 		        AA2.vx *= 0.95;
 		        AA2.vy *= 0.95;
@@ -2902,6 +3004,7 @@
 		            AA2.y = stage.canvas.height - 550;
 		            AA2.vy *= -1; 
 		        }
+
 		        AA3.vy += -1;
 		        AA3.vx *= 0.95;
 		        AA3.vy *= 0.95;
@@ -2911,6 +3014,7 @@
 		            AA3.y = stage.canvas.height - 550;
 		            AA3.vy *= -1; 
 		        }
+
 		        AA4.vy += -1;
 		        AA4.vx *= 0.95;
 		        AA4.vy *= 0.95;
@@ -2920,6 +3024,7 @@
 		            AA4.y = stage.canvas.height - 550;
 		            AA4.vy *= -1; 
 		        }
+
 		        AA5.vy += -1;
 		        AA5.vx *= 0.95;
 		        AA5.vy *= 0.95;
@@ -2929,6 +3034,7 @@
 		            AA5.y = stage.canvas.height - 550;
 		            AA5.vy *= -1; 
 		        }
+
 		        AA6.vy += -1;
 		        AA6.vx *= 0.95;
 		        AA6.vy *= 0.95;
@@ -2938,6 +3044,7 @@
 		            AA6.y = stage.canvas.height - 550;
 		            AA6.vy *= -1; 
 		        }
+
 		        AA7.vy += -1;
 		        AA7.vx *= 0.95;
 		        AA7.vy *= 0.95;
@@ -2947,6 +3054,7 @@
 		            AA7.y = stage.canvas.height - 550;
 		            AA7.vy *= -1; 
 		        }
+
 		        AA8.vy += -1;
 		        AA8.vx *= 0.95;
 		        AA8.vy *= 0.95;
@@ -2956,6 +3064,7 @@
 		            AA8.y = stage.canvas.height - 550;
 		            AA8.vy *= -1; 
 		        }
+
 		        AA9.vy += -1;
 		        AA9.vx *= 0.95;
 		        AA9.vy *= 0.95;
@@ -2965,6 +3074,7 @@
 		            AA9.y = stage.canvas.height - 550;
 		            AA9.vy *= -1; 
 		        }
+
 		        AA10.vy += -1;
 		        AA10.vx *= 0.95;
 		        AA10.vy *= 0.95;
@@ -2974,6 +3084,7 @@
 		            AA10.y = stage.canvas.height - 550;
 		            AA10.vy *= -1; 
 		        }
+
 		        AA11.vy += -1;
 		        AA11.vx *= 0.95;
 		        AA11.vy *= 0.95;
@@ -2983,6 +3094,7 @@
 		            AA11.y = stage.canvas.height - 550;
 		            AA11.vy *= -1; 
 		        }
+
 		        AA12.vy += -1;
 		        AA12.vx *= 0.95;
 		        AA12.vy *= 0.95;
@@ -2992,6 +3104,7 @@
 		            AA12.y = stage.canvas.height - 550;
 		            AA12.vy *= -1; 
 		        }
+
 		        AA13.vy += -1;
 		        AA13.vx *= 0.95;
 		        AA13.vy *= 0.95;
@@ -3001,6 +3114,7 @@
 		            AA13.y = stage.canvas.height - 550;
 		            AA13.vy *= -1; 
 		        }
+
 		        AA14.vy += -1;
 		        AA14.vx *= 0.95;
 		        AA14.vy *= 0.95;
@@ -3010,6 +3124,7 @@
 		            AA14.y = stage.canvas.height - 550;
 		            AA14.vy *= -1; 
 		        }
+
 		        AA15.vy += -1;
 		        AA15.vx *= 0.95;
 		        AA15.vy *= 0.95;
@@ -3019,6 +3134,7 @@
 		            AA15.y = stage.canvas.height - 550;
 		            AA15.vy *= -1; 
 		        }
+
 		        AA16.vy += -1;
 		        AA16.vx *= 0.95;
 		        AA16.vy *= 0.95;
@@ -3028,6 +3144,7 @@
 		            AA16.y = stage.canvas.height - 550;
 		            AA16.vy *= -1; 
 		        }
+
 		        AA17.vy += -1;
 		        AA17.vx *= 0.95;
 		        AA17.vy *= 0.95;
@@ -3037,6 +3154,7 @@
 		            AA17.y = stage.canvas.height - 550;
 		            AA17.vy *= -1; 
 		        }
+
 		        AA18.vy += -1;
 		        AA18.vx *= 0.95;
 		        AA18.vy *= 0.95;
@@ -3046,6 +3164,7 @@
 		            AA18.y = stage.canvas.height - 550;
 		            AA18.vy *= -1; 
 		        }
+
 		        AA19.vy += -1;
 		        AA19.vx *= 0.95;
 		        AA19.vy *= 0.95;
@@ -3055,6 +3174,7 @@
 		            AA19.y = stage.canvas.height - 550;
 		            AA19.vy *= -1; 
 		        }
+
 		        AA20.vy += -1;
 		        AA20.vx *= 0.95;
 		        AA20.vy *= 0.95;
@@ -3064,6 +3184,7 @@
 		            AA20.y = stage.canvas.height - 550;
 		            AA20.vy *= -1; 
 		        }
+
 		        AA21.vy += -1;
 		        AA21.vx *= 0.95;
 		        AA21.vy *= 0.95;
@@ -3073,6 +3194,7 @@
 		            AA21.y = stage.canvas.height - 550;
 		            AA21.vy *= -1; 
 		        }
+
 		        AA22.vy += -1;
 		        AA22.vx *= 0.95;
 		        AA22.vy *= 0.95;
@@ -3084,11 +3206,11 @@
 		        }
 		        		    	    
 			}
+
 				
 			function handleRectClick( event ) {		
 				m++;			
 			}
-
 			stage.update();
 			})
 		}
